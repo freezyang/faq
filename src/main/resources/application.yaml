@@ -1,0 +1,19 @@
+
+spring:
+  datasource:
+    hikari:
+      connection-test-query: SELECT 1
+      connection-timeout: 3000
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/faq
+    username: faq
+    password: 1111
+  jpa:
+    database: mysql
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    database-platform: org.hibernate.dialect.MySQLDialect
+
