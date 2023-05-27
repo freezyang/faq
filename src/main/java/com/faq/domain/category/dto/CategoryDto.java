@@ -12,4 +12,14 @@ public class CategoryDto {
     @Getter @Setter
     @ToString
     public static class Insert extends CategoryDto { }
+
+    @Getter @Setter
+    @ToString
+    public static class Modify extends CategoryDto { }
+
+    @Getter @Setter
+    @ToString
+    public static class List extends CategoryDto {
+        private long categoryNo;
+    }
 }
