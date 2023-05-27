@@ -5,9 +5,10 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.hibernate.envers.Audited;
 
-@Getter
-@Setter
+@Audited
+@Getter @Setter
 @ToString
 @Entity
 @Table(name = "category")
